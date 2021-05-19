@@ -11,9 +11,20 @@ namespace DutchTreat.Controllers
     {
         public IActionResult Index()
         {
-            throw new InvalidProgramException("Bad tings happend here");
             return View();
         }
-        
+
+        [HttpGet("contact")]
+        public IActionResult Contact()
+        {
+            ViewBag.Title = "Contact us";
+            return View();
+        }
+        public IActionResult About()
+        {
+            ViewBag.Title = "About";
+            return View();
+        }
+
     }
 }
