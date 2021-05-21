@@ -209,6 +209,11 @@
         "dist/js/bootstrap.min.js",
         "dist/js/bootstrap.min.js.map"
       ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "@fortawesome/fontawesome-free@5.15.3",
+      "destination": "wwwroot/lib/fortawesome/fontawesome-free/"
     }
   ]
 }

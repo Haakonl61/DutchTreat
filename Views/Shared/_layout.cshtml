@@ -12,7 +12,7 @@
 <body>
     <header class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Welcome to Dutch Treat</a>
+            <h1 class="navbar-brand"><i class="fas fa-paint-brush"></i> Welcome to Dutch Treat</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#theMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,8 +25,12 @@
                         <a class="nav-link" asp-controller="App" asp-action="Contact">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" asp-controller="App" asp-action="Shop">Shop</a>
+                    </li>
+                        <li class="nav-item">
                         <a class="nav-link" asp-controller="App" asp-action="About">About</a>
                     </li>
+
                 </ul>
             </div>
         </nav>
@@ -41,6 +45,8 @@
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <script src="~/lib/fortawesome/fontawesome-free/js/solid.js"></script>
     <script src="~/js/index.js"></script>
 
     @RenderSection("Scripts", false)

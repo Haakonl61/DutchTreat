@@ -1,0 +1,14 @@
+{
+	"Colors": {
+		"Favourite":  "Blue"
+	},
+	"ConnectionStrings": {
+		"DutchContextDb": "Data Source=.\\SQLEXPRESS;Initial Catalog=DutchTreatDb;User ID=sa;Password=sa;MultipleActiveResultSets=true;"
+	},
+	"Logging": {
+		"LogLevel": {
+			"DutchTreat": "Information",
+			"Microsoft": "Warning"
+		}
+	}
+}
