@@ -39,5 +39,26 @@ namespace DutchTreat.Controllers
             }
         }
 
+        [HttpGet("{it:int}")]
+        public IActionResult Get(int id)
+        {
+            try
+            {
+                var order = _repository.GetOrderById(id);
+                if (order != null)
+                {
+                    return Ok(order);
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch(Exception ex)
+            {
+                return BadRequest("Could not get order");
+            }
+        }
+
     }
 }
